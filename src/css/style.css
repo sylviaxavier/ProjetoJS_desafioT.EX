@@ -1,0 +1,97 @@
+body{
+    font-family: 'Lora', serif;
+    scroll-behavior: smooth;
+    background-color: rgb(192, 182, 182);
+}
+.demo-wrap{
+    position: relative;
+    overflow-x: hidden;
+}
+.demo-wrap::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.24;
+    background-image: url('/images/africaDesenhos.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+}
+article, section{
+    height: 100vh;
+    width: 100vw; 
+    position: relative;
+}
+h1,h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 4rem;
+    padding: 5%;
+}
+article>p{
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+section::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.10;
+    background-image: url('/images/africaDesenhos.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+}
+.text{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+section>p{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+button{
+    position: relative;
+    float: middle;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+#boxMensagem{
+    font-size: 1.2rem;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border: 2px solid;
+    background-color: #fff;
+    margin: 4rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: initial;
+}
+@media (max-width:425px) and (orientation:portrait) {
+    p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    }
+    h2{
+        width: 100%;
+        text-align: left;
+        font-size: 2rem;
+        padding-top: 35%;
+        padding-right: 13%;
+    }
+}
+
+
